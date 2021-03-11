@@ -81,9 +81,9 @@
 
 .App-Botton{
   background-image: url("botton.png");
-  height: 50px;
-  flex: content-box;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -97,8 +97,13 @@
 
 .RoomName{
   color: #ffffff;
-  position: absolute;
+  position: relative;
   }
+
+.RoomID{
+  color: #ffffff;
+  position: relative;
+}
 
 
 /* For Study next time*/
@@ -185,41 +190,48 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    left: 90%;
+    right: 20px;
 }
 
   .profile-read-ju-on{
     width: 50px;
     height: 50px;
-    left : 5%;
-    bottom : 5%;
+    left : 30px;
+    bottom : 5px;
   }
 
   .profile-read-pruek{
     position: absolute;
     width: 40px;
     height: 40px;
-    left: 75%;
+    right: 120px;
   }
   .profile-read-phai{
     position: absolute;
     width: 40px;
     height: 40px;
-    left: 82.5%;
-
+    right: 70px;
   }
   .App-header{
     flex : 0.7;
     flex-direction: row;
   }
-  
-  
-  .RoomName{
-    font-size: 10px;
-    left: 17%;
-    top: 0;
+  .App-Botton{
+    width: 40px;
+    height: 40px;
   }
   
+  .RoomName{
+    font-size: 1.2rem;
+    left: 45px;
+    bottom: 35px;
+  }
+  
+  .RoomID{
+    font-size: 0.7rem;
+    bottom: 10px;
+    right: 82px;
+  }
 }
 
 @media  (max-width: 1500px) and (min-width: 761px){
@@ -228,29 +240,29 @@
   .profile-read-ju-on{
     width: 70px;
     height: 70px;
-    left : 3%;
-    bottom : 10%;
+    left : 40px;
+    bottom : 10px;
   }
 
   .profile-read-tar{
     position: absolute;
     width: 50px;
     height: 50px;
-    left: 94%;
+    right: 30px;
     
   }
   .profile-read-pruek{
     position: absolute;
     width: 50px;
     height: 50px;
-    left: 84%;
+    right: 150px;
 
   }
   .profile-read-phai{
     position: absolute;
     width: 50px;
     height: 50px;
-    left: 89%;
+    right: 90px;
 
   }
   .App-header{
@@ -258,13 +270,24 @@
     flex-direction: row;
 
   }
-  
-  .RoomName{
-    font-size: 17px;
-    left: 13%;
-    bottom: 90%;
+
+  .App-Botton{
+    width: 50px;  
+    height: 50px;
+
   }
 
+  .RoomName{
+    font-size: 2.2rem;
+    left: 60px;
+    bottom: 45px;
+  }
+
+  .RoomID{
+    font-size: 1rem;
+    bottom: 10px;
+    right: 175px;
+  }
 }
 
 @media  (min-width: 1501px){
@@ -274,8 +297,8 @@
     width: 80px;
     height: 80px;
     position: absolute;
-    left: 40%;
-    top: 2%
+    left : 700px;
+    top : 20px;
   }
   .profile-read-tar{
     margin: 5px;
@@ -299,13 +322,23 @@
     height: 10%;    
     flex-direction: column;
   }
-  
+
+  .App-Botton{
+    width: 55px;
+    height: 55px;
+  }
 
   .RoomName{
-    font-size: 20px;
-    left: 47%;
-    bottom: 87.5%;
-    
+    position: fixed;
+    font-size: 2.2rem;
+    left: 850px;
+    top: 10px;
   }
-  
+
+  .RoomID{
+    position: fixed;
+    font-size: 1rem;
+    left: 920px;
+    top: 90px;
+  }
 }
