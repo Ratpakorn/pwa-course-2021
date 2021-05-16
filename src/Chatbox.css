@@ -36,10 +36,23 @@
 
 .App-chatroom {
     flex: 12;
+    display: flex;
+    flex-direction: inherit;
     background-image: url(BGapp.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: auto;
+    scroll-behavior: smooth;
+    overflow-scrolling: auto;
+}
+
+.App-namebox {
+    background-color: #000000;
+    flex-direction: row-reverse;
+    display: flex;
+    text-align: center;
+    color: white;
 }
 
 .App-chatroom-text {
@@ -48,8 +61,8 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: fit-content;
-    display: flex;
-    flex-direction: column;
+    display:flex;
+    flex-direction: column-reverse;
     margin: 25px;
     background-color: rgb(255, 255, 255);
 }
@@ -60,10 +73,8 @@
 }
 
 .App-textbox {
-    background-color: rgb(253, 4, 4);
-    justify-content: center;
-    align-items: stretch;
     display: flex;
+    overflow: no-display;
 }
 
 .App-textbox-input {
@@ -151,6 +162,10 @@
         font-size: 30px;
     }
 }
+
+/*Message form 1620701795 Give Me A SenPai*/
+
+/*Debug Test*/
 
 /* For Study next time*/
 /*.chat-form{*/

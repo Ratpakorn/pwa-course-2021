@@ -3,10 +3,9 @@ import FriendList from "./FriendList";
 import EnterApp_3ofghost from "./EnterApp_3ofghost";
 import Profiletar from "./Profile-Tar";
 import LobbySetting from "./LobbySetting";
-import ChatBox from "./Chatbox";
 import LoadingBar from "./LoadingBar";
-import Phai from './ProfilePhai';
-import ButtonLobbySetting from "./ButtonLobbySettings";
+import Lobby from "./Lobby";
+import PruekProfile from "./PruekProfile";
 
 
 function Router() {
@@ -14,11 +13,11 @@ function Router() {
     return (
         <BrowserRouter>
             <Switch>
+                <Route path="/PruekProfile">
+                    <PruekProfile/>
+                </Route>
                 <Route path="/Profile_Tar">
                     <Profiletar/>
-                </Route>
-                <Route path="/ProfilePhai">
-                    <Phai/>
                 </Route>
                 <Route path="/Eye_Scene">
                     <LoadingBar/>
@@ -27,7 +26,7 @@ function Router() {
                     <FriendList/>
                 </Route>
                 <Route path="/App">
-                    <ChatBox/>
+                    <Lobby/>
                 </Route>
                 <Route path="/LobbySetting">
                     <LobbySetting/>
@@ -35,13 +34,12 @@ function Router() {
                 <Route path="/">
                     <EnterApp_3ofghost/>
                 </Route>
-                <Route path="/ButtonLobbySettings">
-                    <ButtonLobbySetting/>
-                </Route>
             </Switch>
         </BrowserRouter>
     );
-};
+}
+
+//Plz give me A senpai
 
 export default Router;
 

@@ -1,25 +1,14 @@
-import {Link} from "react-router-dom";
-import "./Profile.css";
+import App from './App';
 
+function Profile(){
 
-function Profile({childre}) {
-    return(
-    // <div className="App col-12">
-     <div>  
-     <Link to="/App">
-     <button>
-     Back to chat
-     </button>
-     </Link>
-     <div className="textpro"></div>
-      <div className="bgpro">
-      <div className="Propic"></div>
-      <div className="textname">
-     </div>
-     {childre}
+  return (
+    <App>
+      <div>
+        My Profile
       </div>
-     </div>
-     
-    );
+    </App>
+  )
 };
-    export default Profile;
+
+export default Profile;
